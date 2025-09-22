@@ -45,6 +45,5 @@ csvcut -t -c ingredients_text,product_name,code "$tmp_csv" \
 count="$(wc -l < "$tmp_matches" | tr -d ' ')"
 echo "----"
 echo "Found ${count} product(s) containing: \"${INGREDIENT}\""
-5/8
 # cleanup
 rm -f "$tmp_csv" "$tmp_matches"
